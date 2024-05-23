@@ -76,6 +76,18 @@ fieldset {
   width: 100vw;
   height: 100vh;
 }
+
+.title-container{
+  position: relative;
+  top: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+}
+
 .right-side{
 
   background-color: black;
