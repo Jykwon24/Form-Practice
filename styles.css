@@ -90,6 +90,23 @@ fieldset {
 .input {
   display: flex;
   flex-flow: column;
+  font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  color: white;
+}
+
+.input > label {
+  font-size: .8rem;
+}
+
+.input > input {
+  margin-bottom: 1rem;
+  background-color: black;
+  border: 1px solid lightblue;
 }
 
 .shift{
