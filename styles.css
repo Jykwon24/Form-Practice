@@ -89,19 +89,26 @@ fieldset {
 }
 
 .right-side{
-
   background-color: black;
 }
 
 .form {
   display: flex;
-  /* flex-flow: column; */
-  list-style: none
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 15px;
+}
+
+.input-box {
+  display: flex;
+  flex-flow: column wrap;
+
 }
 
 .input {
   display: flex;
-  flex-flow: column;
+  flex-flow: column ;
+  margin-bottom: 5px;
   font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
@@ -109,23 +116,29 @@ fieldset {
     font-variation-settings:
       "wdth" 100;
   color: white;
+
 }
 
 .input > label {
   font-size: .8rem;
-  padding-bottom: 2px;
+
 }
 
 .input > input {
-  margin-bottom: 1rem;
+  /* display: flex;
+  flex-flow: column; */
   background-color: black;
   border: 1px solid grey;
   border-radius: 5px;
-  width: 200px
+  width: 250px
 }
 
 .shift{
   padding-left: 3vw;
+}
+
+.shift-right {
+  padding-right: 3vw;
 }
 
 .text-container {
@@ -143,6 +156,8 @@ fieldset {
   max-width: 100%;
   height: auto;
   min-width: 10vw;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
 
@@ -152,6 +167,11 @@ fieldset {
   flex-direction: column;
   justify-content: center;
   width: 60vw;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .backdrop {
