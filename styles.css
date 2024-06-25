@@ -72,7 +72,6 @@ fieldset {
 }
 .container {
   display: flex;
-  flex-wrap: row;
   width: 100vw;
   height: 100vh;
 }
@@ -94,14 +93,16 @@ fieldset {
 
 .form {
   display: flex;
-  justify-content: space-evenly;
+  flex-flow: row;
+  /* justify-content: space-evenly */
   list-style: none;
-  gap: 15px;
+  gap: 25px;
 }
 
 .input-box {
   display: flex;
   flex-flow: column wrap;
+  padding-bottom: 20px;
 
 }
 
