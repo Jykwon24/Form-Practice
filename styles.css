@@ -12,6 +12,12 @@
 */
 * {
   margin: 0;
+  font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 /*
@@ -67,13 +73,47 @@ h6 {
   isolation: isolate;
 }
 
+@media only screen and (max-width:600px) {
+  .container {
+    flex-flow: column;
+    height: auto;
+    text-align: center;
+  }
+}
+
 fieldset {
   border-style: none;
 }
+
+legend{
+
+}
+
+a {
+  padding-left: 3px;
+  color: white;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
 .container {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
   display: flex;
   width: 100vw;
   height: 100vh;
+}
+
+.account {
+  display: flex;
 }
 
 .title-container{
@@ -96,7 +136,7 @@ fieldset {
   flex-flow: row;
   /* justify-content: space-evenly */
   list-style: none;
-  gap: 25px;
+  gap: 50px;
 }
 
 .input-box {
@@ -110,12 +150,6 @@ fieldset {
   display: flex;
   flex-flow: column ;
   margin-bottom: 5px;
-  font-family: "Ubuntu Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
   color: white;
 
 }
@@ -144,13 +178,9 @@ fieldset {
 
 .text-container {
   text-align: center;
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
   padding-bottom: 10vh;
   width: 90%;
-  color: white;
+
 }
 
 .img-size {
@@ -171,8 +201,12 @@ fieldset {
 }
 
 .button {
-  display: flex;
-  justify-content: flex-start;
+  padding-bottom: 20px;
+}
+
+.account {
+  color: white;
+
 }
 
 .backdrop {
