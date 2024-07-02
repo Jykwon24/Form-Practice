@@ -234,4 +234,20 @@ input, select, textarea{
     display: flex;
     background-size: 100vw;
   }
+
+  .title-container {
+    position: static;
+    width: 100vw;
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+
+  .right-side {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:450px) {
+
 }
