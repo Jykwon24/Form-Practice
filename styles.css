@@ -73,32 +73,28 @@ h6 {
   isolation: isolate;
 }
 
-@media only screen and (max-width:600px) {
-  .container {
-    flex-flow: column;
-    height: auto;
-    text-align: center;
-  }
-}
+
 
 fieldset {
   border-style: none;
 }
 
 legend{
-
+  font-weight: bold;
 }
 
 a {
   padding-left: 3px;
-  color: white;
+  font-weight: bold;
+  color: rgba(50, 64, 219, 0.831)
 }
 
 button {
-  color: white;
+  color: rgba(50, 64, 219, 0.831);
   background-color: black;
-  border: 2px solid white;
+  border: 2px solid rgba(50, 64, 219, 0.831);
   border-radius: 3px;
+  font-weight: bold;
 }
 
 .container {
@@ -151,7 +147,11 @@ button {
   flex-flow: column ;
   margin-bottom: 5px;
   color: white;
+}
 
+input, select, textarea{
+  font-size: 1rem;
+  color: lightgrey;
 }
 
 .input > label {
@@ -206,7 +206,11 @@ button {
 
 .account {
   color: white;
+}
 
+.button,
+.account {
+  font-size: 1rem;
 }
 
 .backdrop {
@@ -215,4 +219,19 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   width: 40vw;
+}
+
+@media only screen and (max-width:600px) {
+  .container {
+    flex-flow: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .backdrop {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    background-size: 100vw;
+  }
 }
