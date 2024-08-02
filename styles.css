@@ -228,6 +228,11 @@ input, select, textarea{
     text-align: center;
   }
 
+  .form {
+    padding-left: 5vw;
+    justify-content: center;
+  }
+
   .backdrop {
     width: 100vw;
     height: 15vh;
@@ -246,10 +251,8 @@ input, select, textarea{
     width: auto;
     height: auto;
   }
-}
 
-@media only screen and (max-width:450px) {
   img {
     display: none;
-  }
+  };
 }
